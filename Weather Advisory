@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+
+int temperature;
+
+// Input: Ask the user to enter the temperature
+
+printf("Enter the temperature in Celsius: ");
+
+scanf("%d", &temperature);
+
+// Decision control using else-if ladder
+
+if (temperature >= 40) {
+
+printf("It's extremely hot! Stay indoors.\n"); // Advisory for 40°C and above
+
+} else if (temperature >= 30) {
+
+printf("It's hot. Stay hydrated.\n"); // Advisory for 30°C to 39°C
+
+} else if (temperature >= 20) {
+
+printf("The weather is pleasant.\n"); // Advisory for 20°C to 29°C
+
+} else if (temperature >= 10) {
+
+printf("It's a bit chilly. Wear a light jacket.\n"); // Advisory for 10°C to 19°C
+
+} else {
+
+printf("It's cold! Bundle up.\n"); // Advisory for below 10°C
+
+}
+
+return 0;
