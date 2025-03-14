@@ -1,0 +1,27 @@
+//Nested if Statement
+
+Syntax:
+
+if (condition1) {
+
+// Executes if condition1 is true
+
+if (condition2) {
+
+// Executes if condition2 is true (inside the first if block)
+
+} else {
+
+// Executes if condition2 is false (inside the first if block)
+
+}
+
+} else {
+
+// Executes if condition1 is false
+
+}
+
+The use of nested if statements in C programming allows you to evaluate multiple conditions in a hierarchical or
+dependent manner. This is particularly useful when a decision needs to be made based on more than one
+condition, where the outcome of the second (or subsequent)
