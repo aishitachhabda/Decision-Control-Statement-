@@ -1,0 +1,35 @@
+#include <stdio.h> // Include the standard input-output library
+
+int main() {
+
+char light; // Declare a variable to store the traffic light color
+
+// Input: Ask the user to enter the traffic light color
+
+printf("Enter the traffic light color (R/Y/G): ");
+
+// Read the user input and store it in the variable 'light'
+
+scanf("%c", &light);
+
+// Decision control using else-if ladder to determine action based on the light color
+
+if (light == 'R' || light == 'r') {
+
+printf("Stop!\n"); // Action for Red light: Print "Stop!"
+
+} else if (light == 'Y' || light == 'y') {
+
+printf("Get Ready!\n"); // Action for Yellow light: Print "Get Ready!"
+
+} else if (light == 'G' || light == 'g') {
+
+printf("Go!\n"); // Action for Green light: Print "Go!"
+
+} else {
+
+printf("Invalid input! Please enter R, Y, or G.\n"); // Handle invalid input
+
+}
+
+return 0; // End of the program, return 0 to indicate successful execution
