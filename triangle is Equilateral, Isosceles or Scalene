@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+
+// Declare variables to store the three sides of the triangle
+
+int side1, side2, side3;
+
+// Ask the user to input the three sides of the triangle
+
+printf("Enter the lengths of three sides of the triangle:\n");
+
+scanf("%d %d %d", &side1, &side2, &side3);
+
+// Check if all sides are equal (Equilateral Triangle)
+
+if (side1 == side2 && side2 == side3) {
+
+printf("The triangle is Equilateral.\n");
+
+}
+
+// Check if any two sides are equal (Isosceles Triangle)
+
+else if (side1 == side2 || side2 == side3 || side1 == side3) {
+
+printf("The triangle is Isosceles.\n");
+
+}
+
+// If no sides are equal (Scalene Triangle)
+
+else {
+
+printf("The triangle is Scalene.\n");
+
+}
+
+return 0;
+
+}
