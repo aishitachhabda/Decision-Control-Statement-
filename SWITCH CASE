@@ -1,0 +1,25 @@
+Decision Control Statement: SWITCH
+
+Syntax:
+
+switch (expression) {
+
+case value1:
+
+// Code to execute if expression == value1
+
+break; // Exits the switch block
+
+case value2:
+
+// Code to execute if expression == value2
+
+break; // Exits the switch block
+
+// More cases as needed
+
+default:
+
+// Code to execute if expression doesn't match any case
+
+break; // Exits the switch block
