@@ -1,5 +1,8 @@
-Decision Control Statement: SWITCH
-
+//Decision Control Statement: SWITCH
+//The switch statement in C is a control statement used to execute one block of code among
+many options based on the value of an expression. It provides a way to simplify multiple
+if-else conditions into a cleaner and more readable format when you have to choose between
+many possible values for a variable.
 Syntax:
 
 switch (expression) {
