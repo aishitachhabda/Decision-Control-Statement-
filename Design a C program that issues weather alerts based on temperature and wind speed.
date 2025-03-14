@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+
+int temperature, windSpeed;
+
+// Input: Get the temperature and wind speed from the user
+
+printf("Enter the temperature (in °C): ");
+
+scanf("%d", &temperature);
+
+printf("Enter the wind speed (in km/h): ");
+
+scanf("%d", &windSpeed);
+
+// Outer if statement checks if the temperature is below freezing
+
+if (temperature < 0) {
+
+// Nested if statement checks if the wind speed is high
+
+if (windSpeed > 20) {
+
+printf("Frostbite Warning: High risk due to low temperature and high wind speed.\n");
+
+} else {
+
+printf("Cold Weather Alert: Temperature is below freezing.\n");
+
+}
+
+} else {
+
+printf("No Weather Alert: Temperature is above freezing.\n");
+
+}
+
+return 0; // End of the program
