@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+
+int grade;
+
+float income;
+
+// Input: Ask the user to enter their grade and family income
+
+printf("Enter your grade (out of 100): ");
+
+scanf("%d", &grade);
+
+printf("Enter your family income (in USD): ");
+
+scanf("%f", &income);
+
+// Nested if statements to check eligibility
+
+if (grade >= 85) { // Check if the grade is 85 or above
+
+if (income < 10000) { // Check if family income is less than 10,000
+
+printf("You are eligible for the scholarship!\n"); // Eligible if both conditions are true
+
+} else {
+
+printf("You are not eligible for the scholarship due to high income.\n"); // Not eligible due to high income
+
+}
+
+} else {
+
+printf("You are not eligible for the scholarship due to insufficient grades.\n"); // Not eligible due to low grades
+
+}
+
+return 0; // End of the program
